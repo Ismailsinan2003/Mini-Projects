@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color:black;
+    color: white;
+    height: 10vh;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Mona Sans", sans-serif;
+
+}
+
+nav li{
+    list-style: none;
+}
+
+.gamecontainer{
+    background-color: rgb(128, 223, 227);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.box{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(2rem, 5vw, 3rem);
+    cursor: pointer;
+    font-family: "Mona Sans", sans-serif;
+}
+
+.box:hover{
+    background-color: rgb(245, 221, 189);
+}
