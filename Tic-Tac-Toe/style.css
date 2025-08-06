@@ -10,7 +10,8 @@ nav{
     font-size: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-left: 20px;
+    /* justify-content: center; */
     font-family: "Mona Sans", sans-serif;
 
 }
@@ -20,7 +21,8 @@ nav li{
 }
 
 .gamecontainer{
-    background-color: rgb(128, 223, 227);
+    
+    margin: 50px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,9 +42,30 @@ nav li{
     justify-content: center;
     font-size: clamp(2rem, 5vw, 3rem);
     cursor: pointer;
-    font-family: "Mona Sans", sans-serif;
+    font-family: "Baloo Da 2", sans-serif;
 }
 
 .box:hover{
     background-color: rgb(245, 221, 189);
+}
+
+.gameinfo{
+    font-family: "Baloo Da 2", sans-serif;
+}
+
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
 }
