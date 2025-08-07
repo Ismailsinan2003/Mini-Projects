@@ -3,7 +3,7 @@ console.log("welcome to tic tac toe")
 const ting = new Audio("audio/ting.mp3")
 const gameover = new Audio("audio/gameover.mp3")
 
-let isgameover = true
+let isgameover = false
 let turn = "X"
 
 // function to change the turn
@@ -29,7 +29,7 @@ function checkWin() {
 
     win.forEach((e) => {
         if ((boxtexts[e[0]].innerText === boxtexts[e[1]].innerText) && (boxtexts[e[2]].innerText === boxtexts[e[1]].innerText) && (boxtexts[e[0]].innerText !== '')) {
-            document.querySelector(".info").innerText = boxtexts[e[0]].innerText + "won"
+            document.querySelector(".info").innerText = boxtexts[e[0]].innerText + " won the game 🎉"
             isgameover = true
             gameover.play()
         }
@@ -57,5 +57,24 @@ box.forEach((element) => {
 
         }
     })
+})
+
+
+// logic on reset button
+
+const reset = document.querySelector('#reset')
+reset.addEventListener('click', () => {
+    const boxtexts = Array.from(document.getElementsByClassName('boxtext'))
+    boxtexts.forEach((e) => {
+        e.innerHTML = ''
+    })
+    turn="X"
+    isgameover=false
+    if (!isgameover) {
+        const info = document.querySelector(".info")
+        info.innerHTML = `turn for ${turn}`
+    }
+
+
 })
 

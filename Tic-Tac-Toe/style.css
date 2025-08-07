@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-nav{
-    background-color:black;
+nav {
+    background-color: black;
     color: white;
     height: 10vh;
     font-size: 20px;
@@ -16,12 +16,12 @@ nav{
 
 }
 
-nav li{
+nav li {
     list-style: none;
 }
 
-.gamecontainer{
-    
+.gamecontainer {
+
     margin: 50px 0;
     display: flex;
     align-items: center;
@@ -29,13 +29,13 @@ nav li{
     gap: 20px;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
 }
 
-.box{
+.box {
     border: 2px solid black;
     display: flex;
     align-items: center;
@@ -45,27 +45,40 @@ nav li{
     font-family: "Baloo Da 2", sans-serif;
 }
 
-.box:hover{
+.box:hover {
     background-color: rgb(245, 221, 189);
 }
 
-.gameinfo{
+.gameinfo {
     font-family: "Baloo Da 2", sans-serif;
 }
 
 
-.bt-0{
+.bt-0 {
     border-top: 0;
 }
 
-.bb-0{
+.bb-0 {
     border-bottom: 0;
 }
 
-.br-0{
+.br-0 {
     border-right: 0;
 }
 
-.bl-0{
+.bl-0 {
     border-left: 0;
+}
+
+#reset {
+    margin: 0 190px;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.info{
+    margin-right: 10px;
+    font-size: 20px;
+    position: absolute;
 }
