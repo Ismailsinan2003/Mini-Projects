@@ -77,8 +77,27 @@ nav li {
     font-size: 15px;
     cursor: pointer;
 }
-.info{
+
+.info {
     margin-right: 10px;
     font-size: 20px;
     position: absolute;
+}
+
+@media (max-width: 900px) {
+    .gamecontainer {
+        flex-direction: column;
+    }
+
+    h1 {
+        margin-top: 40px;
+        margin-left: 60px;
+        font-size: 30px;
+    }
+    .info{
+        margin-left: 60px;
+    }
+    #reset{
+        margin-left: 230px;
+    }
 }
