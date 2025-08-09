@@ -1,0 +1,35 @@
+#clockContainer {
+    margin: auto;
+    height: 40vw;
+    /* same unit for height and width to maintain a square shape */
+    width: 40vw;
+    background-image: url(images/clock.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* fills the square without distortion */
+    position: relative;
+}
+#hours, #minutes, #seconds{
+    background-color: black;
+    position: absolute;
+    border-radius: 20px;
+    transform-origin: bottom;
+}
+#hours {
+    height: 25%;
+    width: 2%;
+    bottom: 50%;
+    left: 48.8%;  
+}
+#minutes{
+    height: 30%;
+    width: 1.5%;
+    bottom: 50%;
+    left: 49%;
+}
+#seconds{
+    height: 35%;
+    width: 1%;
+    bottom: 50%;
+    left: 49.3%;
+}
