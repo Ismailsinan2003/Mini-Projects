@@ -8,11 +8,11 @@ body.addEventListener('mousemove', (event)=>{
     span.style.left=xpos + "px"
     span.style.top=ypos + "px"
 
+    body.appendChild(span)
+
     const size=Math.random()*100;
     span.style.width = size + "px"
     span.style.height=size + "px"
-
-    body.appendChild(span)
     
     setTimeout(()=>{
         span.remove()
