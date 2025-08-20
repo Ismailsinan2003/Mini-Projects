@@ -8,7 +8,5 @@ button.addEventListener('mouseover', (event)=>{
     button.style.setProperty("--xpos",`${xpos}px`)
     button.style.setProperty("--ypos", `${ypos}px`)
 
-    
-
 
 })
