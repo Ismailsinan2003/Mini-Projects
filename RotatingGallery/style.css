@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+span img{
+    height: 200px;
+    
+}
+
+.image-container{
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(0deg);
+    position: relative;
+    transition: transform .7s ease-in-out;
+}
+
+.image-container span {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
+
+}
+
+.image-container span img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+
