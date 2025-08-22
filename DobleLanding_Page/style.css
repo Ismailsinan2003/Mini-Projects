@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.split{
+    width: 50%;
+    height: 100%;
+    top: 0; 
+}
+
+.split.left{
+    position: absolute;
+    left: 0;
+    background-color: #d0a4e1;
+    font-size: 30px;
+    background-image: url("https://www.apple.com/mideast/iphone-16/f/images/overview/product-viewer/iphone/all_colors__flhn5cmb1t26_medium_2x.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.split.right{
+    position: absolute;
+    right: 0;
+    background-color: #ee7878;
+    font-size: 30px;
+    background-image: url("https://stg-images.samsung.com/is/image/samsung/assets/ae/smartphones/galaxy-s24-ultra/images/hotfix4/galaxy-s24-ultra-highlights-color-carousel-global-mo.jpg?imbypass=true");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.btn{
+    background-color: black;
+    color: #fff;
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 4px solid;
+    cursor: pointer;
+    transition: .4s background-color;
+    white-space:nowrap;
+   
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+h1{
+    color: #fff;
+    letter-spacing: 4px;
+    backdrop-filter:brightness(.5);
+    
+}
+
+.active-left .left{
+    width: 75%;
+}
+
+.active-left .right{
+    width: 25%;
+}
+
+.active-right .right{
+    width: 75%;
+}
+
+.active-right .left{
+    width: 25%;
+}
+
+.left, .right{
+    transition: 3s width ease-in-out;
+}
