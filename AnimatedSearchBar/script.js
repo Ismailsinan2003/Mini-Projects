@@ -3,7 +3,7 @@ const Magnifier = document.querySelector(".magnifier")
 
 
 Magnifier.addEventListener('click', ()=>{
-    SearchBar.classList.remove("active")
+    SearchBar.classList.toggle("active")
 
 })
 

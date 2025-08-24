@@ -19,7 +19,7 @@ body{
     box-shadow: 6px 6px 10px rgba(0, 0, 0, .2),
                -6px -6px 10px rgba(255, 255, 255, .7);
     margin: 10px;
-    transition: width .5s ease-in;
+    transition: width .5s ease-out;
 }
 
 .mic-icon{
